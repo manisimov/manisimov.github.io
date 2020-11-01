@@ -4,12 +4,13 @@ title:  "GDB cheat sheet"
 date:   2020-10-02 00:02:00 +0700
 categories: jekyll update
 ---
-    Load symbols from file (mess):
-        > file mess
-        Reading symbols from mess...done.
-        > target exec mess
-        > b main
-        > r
+Load symbols from file (mess):
+
+    > file mess
+    Reading symbols from mess...done.
+    > target exec mess
+    > b main
+    > r
 
 {% raw %}
 Renesas simulator:
@@ -21,12 +22,15 @@ Renesas simulator:
 {% endraw %}
     
 Python (https://sourceware.org/gdb/onlinedocs/gdb/Python-API.html#Python-API):
+
     > source mess_gdb.py
     
 Pause running process:
+
     > [CTRL+C]
     
 TUI:
+
     > [CTRL+x+a]
     > layout asm
 
