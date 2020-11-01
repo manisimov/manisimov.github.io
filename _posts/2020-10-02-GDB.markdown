@@ -4,13 +4,14 @@ title:  "GDB cheat sheet"
 date:   2020-10-02 00:02:00 +0700
 categories: jekyll update
 ---
+{% highlight ruby %}
 Load symbols from file (mess):
     > file mess
     Reading symbols from mess...done.
     > target exec mess
     > b main
     > r
-    
+{% endhighlight %}
     
 Renesas simulator:
     > file rx52n.elf
@@ -27,4 +28,5 @@ Pause running process:
     
 TUI:
     > [CTRL+x+a]
-    > layout asm    
+    > layout asm
+
