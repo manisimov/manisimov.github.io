@@ -10,13 +10,15 @@ categories: jekyll update
         > target exec mess
         > b main
         > r
-    
+
+{% raw %}
 Renesas simulator:
     > file rx52n.elf
     > target sim
     > load
     > b main
     > r
+{% endraw %}
     
 Python (https://sourceware.org/gdb/onlinedocs/gdb/Python-API.html#Python-API):
     > source mess_gdb.py
