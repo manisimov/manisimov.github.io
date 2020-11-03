@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "Jekyll"
+date:   2020-10-03 00:02:00 +0700
+categories: jekyll update
+---
+Build locally:
+
+    > bundle exec jekyll serve
+    
+After gem file chnaged:
+
+    > bundle update
+

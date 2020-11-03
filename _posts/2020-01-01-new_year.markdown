@@ -1,9 +1,0 @@
----
-layout: post
-title:  "Happy new year!"
-date:   2020-01-01 00:00:00 +0200
-categories: jekyll update
----
-New post about new year
-
-А чё по юникоду?
