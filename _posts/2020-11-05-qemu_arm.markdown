@@ -15,13 +15,18 @@ gcc flag `-static` is used to make statically linked binary.
 
 ## Cross compilation
 
-    arm-linux-gnueabi-gcc-8 -g3 -static mess.c -march=armv8-a -o mess
+    arm-linux-gnueabi-gcc-8 -g3 -static mess.c -march=armv7 -o mess
+    
+    aarch64-linux-gnu-gcc -g3 -static mess.c -mcpu=cortex-a53 -o mess
 
 ## Debugging
 
 Start process on the cortex-a7 emulator and open GDB server on port 1234:
 
     qemu-arm-static -g 1234 mess -cpu cortex-a7
+    
+    qemu-aarch64-static -g 1234 mess -cpu cortex-a53
+
     
 Attach gdb:
     
