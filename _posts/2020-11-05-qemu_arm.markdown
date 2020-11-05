@@ -1,0 +1,36 @@
+---
+layout: post
+title:  "QEMU, ARM and two smoking barrels."
+date:   2020-11-05 20:23:00 +0700
+categories: jekyll update
+---
+## Static and dynamic libraries
+
+As I understood, QEMU (user-space QEMU, e.g. `qemu-arm` from `qemu-user` package) requires dynamicaly linked libraries for the target architecture installed on the host. 
+
+There is possibility to link all libraries statically and run it with `qemu-arm-static` from `qemu-user-static` debian package.
+
+gcc flag `-static` is used to make statically linked binary.
+
+
+## Cross compilation
+
+    arm-linux-gnueabi-gcc-8 -g3 -static mess.c -march=armv8-a -o mess
+
+## Debugging
+
+Start process on the cortex-a7 emulator and open GDB server on port 1234:
+
+    qemu-arm-static -g 1234 mess -cpu cortex-a7
+    
+Attach gdb:
+    
+    gdb-multiarch
+    
+    > file mess
+    > target remote localhost:1234
+    > b main
+    > c
+    > next
+    ...
+
