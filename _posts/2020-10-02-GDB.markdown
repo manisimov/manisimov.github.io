@@ -20,9 +20,15 @@ Renesas simulator:
     > b main
     > r
     
-Python (https://sourceware.org/gdb/onlinedocs/gdb/Python-API.html#Python-API):
+Script from file:
+
+    gdb -x mess.gdb
+
+Script from file (CLI):
 
     > source mess_gdb.py
+    
+Python API for scripts (https://sourceware.org/gdb/onlinedocs/gdb/Python-API.html#Python-API)
     
 Pause running process:
 
@@ -32,4 +38,5 @@ TUI:
 
     > [CTRL+x+a]
     > layout asm
+
 
