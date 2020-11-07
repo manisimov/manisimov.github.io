@@ -39,4 +39,11 @@ TUI:
     > [CTRL+x+a]
     > layout asm
 
+Print:
+
+    > p/x $x30 - hex
+    > p/t $x30 - binary
+    > p/d $x30 - decimal
+    > display/x $x30 - print after each gdb stop
+    > i r x30
 
