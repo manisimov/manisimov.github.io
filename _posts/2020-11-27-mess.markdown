@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "Mess"
+date:   2020-11-27 15:00:00 +0700
+categories: jekyll update
+---
+# Tools to study later:
+
+    clang-format
+
+    lizard - code complexity
+
