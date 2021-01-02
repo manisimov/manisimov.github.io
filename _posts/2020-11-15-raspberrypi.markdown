@@ -10,3 +10,6 @@ categories: jekyll update
     https://wiki.qemu.org/Documentation/Platforms/ARM
 
 
+Start qemu:
+
+    ./qemu-system-arm -s -S -m 512 -M raspi1ap -serial stdio -kernel /home/mih/projects/Raspberry/bare-metal-pi/output/rasppi.elf
