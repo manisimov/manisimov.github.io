@@ -1,0 +1,31 @@
+(add-to-list 'load-path "~/.emacs.d/lisp")
+
+; Do not display the splash screen
+(setq inhibit-startup-screen t)
+
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(c-basic-offset 4))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(blank-empty ((t nil)))
+ '(blank-indentation ((t (:foreground "dim gray"))))
+ '(blank-newline ((t (:foreground "aquamarine3" :weight bold))))
+ '(blank-space ((t (:foreground "dim gray"))))
+ '(blank-tab ((t (:foreground "dim gray"))))
+ '(blank-trailing ((t (:foreground "dim gray"))))
+ '(font-lock-function-name-face ((t (:foreground "black" :weight bold))))
+ '(font-lock-keyword-face ((t (:foreground "medium blue" :weight bold))))
+ '(font-lock-type-face ((t (:foreground "ForestGreen" :weight bold)))))
+ 
+(require 'blank-mode)
+(global-blank-mode t)
+
+(setq-default indent-tabs-mode nil)
+

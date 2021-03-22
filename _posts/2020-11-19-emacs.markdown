@@ -8,3 +8,8 @@ Toggle comment:
 
     M-;
 
+My config files:
+
+[blank mode]({{ site.baseurl }}{% link files/blank-mode.el %})
+[init]({{ site.baseurl }}{% link files/init.el %})
+[emacs]({{ site.baseurl }}{% link files/emacs %})
