@@ -29,3 +29,21 @@
 
 (setq-default indent-tabs-mode nil)
 
+(setq blank-line-column 550)
+
+;; highlight brackets
+(show-paren-mode 1)
+(setq show-paren-style 'parenthesis)
+
+;; C-q character inisert in hex form
+(setq read-quoted-char-radix 16)
+
+;; highlight current line
+(global-hl-line-mode 1)
+
+;; line number on the right
+(require 'linum)
+(global-linum-mode t)
+;; use customized linum-format: add a addition space after the line number
+(setq linum-format (lambda (line) (propertize (format (let ((w (length (number-to-string (count-lines (point-min) (point-max)))))) (concat "%" 
+(number-to-string w) "d|")) line) 'face 'linum)))
